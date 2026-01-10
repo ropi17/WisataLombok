@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Lombok Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2 data-i18n="login">Login</h2>
+
+            <form id="login-form">
+                <div class="input-group">
+                    <label data-i18n="username">Username</label>
+                    <input type="text" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label data-i18n="password">Password</label>
+                    <input type="password" name="password" required>
+                </div>
+
+                <button type="submit" data-i18n="login">Login</button>
+            </form>
+
+            <div class="switch-page">
+                Don't have an account? <a href="register.html" data-i18n="register">Register</a>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <select id="language-select" style="width: 100%;">
+                    <option value="en">🇺🇸 English</option>
+                    <option value="id">🇮🇩 Indonesia</option>
+                    <option value="de">🇩🇪 Deutsch</option>
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="nl">🇳🇱 Nederlands</option>
+                    <option value="it">🇮🇹 Italiano</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="zh">🇨🇳 中文</option>
+                    <option value="ja">🇯🇵 日本語</option>
+                    <option value="ko">🇰🇷 한국어</option>
+                    <option value="ru">🇷🇺 Русский</option>
+                    <option value="ar">🇸🇦 العربية</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/languages.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

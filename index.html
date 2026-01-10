@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lombok Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo">
+            <span>🏝️</span> <span data-i18n="title">Lombok Paradise</span>
+        </div>
+        <div class="nav-controls">
+            <select id="language-select">
+                <option value="en">🇺🇸 English</option>
+                <option value="id">🇮🇩 Indonesia</option>
+                <option value="de">🇩🇪 Deutsch</option>
+                <option value="fr">🇫🇷 Français</option>
+                <option value="nl">🇳🇱 Nederlands</option>
+                <option value="it">🇮🇹 Italiano</option>
+                <option value="es">🇪🇸 Español</option>
+                <option value="zh">🇨🇳 中文</option>
+                <option value="ja">🇯🇵 日本語</option>
+                <option value="ko">🇰🇷 한국어</option>
+                <option value="ru">🇷🇺 Русский</option>
+                <option value="ru">🇷🇺 Русский</option>
+                <option value="ar">🇸🇦 العربية</option>
+            </select>
+            <span id="user-display" style="font-weight: 600; color: var(--dark);"></span>
+            <button id="logout-btn" data-i18n="logout"
+                style="width: auto; padding: 8px 16px; margin: 0;">Logout</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 data-i18n="welcome">Experience the Beauty of Lombok</h1>
+        <p data-i18n="desc">Discover the hidden gems of Indonesia's most beautiful island.</p>
+    </header>
+
+    <main class="content-container">
+        <h2 style="padding: 2rem 2rem 0; color: var(--dark);" data-i18n="explore">Explore Beaches</h2>
+        <div id="places-grid" class="places-grid">
+            <!-- Places will be loaded here via JS -->
+        </div>
+    </main>
+
+    <footer>
+        <p data-i18n="footer">© 2026 Lombok Tourism. All rights reserved.</p>
+    </footer>
+
+    <script src="data/languages.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
